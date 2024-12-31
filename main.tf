@@ -53,6 +53,8 @@ output "POSTGRES_URL" {
   }
 }
 
-output "DB_NAME" {
+output "DBNAME" {
   value = neon_project.project.database_name
+  description = "The name of the database."
+  sensitive = true
 }
